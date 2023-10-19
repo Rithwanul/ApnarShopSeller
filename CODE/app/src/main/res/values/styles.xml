@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryVariant">@color/yellow_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red_200</item>
+        <item name="colorSecondaryVariant">@color/red_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AutoComplete" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <item name="hintTextColor">@color/app_black1</item>
+        <item name="android:textColorHint">@color/app_black1</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="Theme.MyApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="AppThemeMaterial" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryDark">@color/yellow_700</item>
+        <item name="colorAccent">@color/app_black1</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeOverlay.MySwitchCompat" parent="">
+        <item name="colorControlActivated">@color/yellow_500</item>
+        <item name="colorSwitchThumbNormal">@color/app_black3</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.drawer" parent="">
+        <item name="colorControlActivated">@color/app_white1</item>
+        <item name="colorSwitchThumbNormal">@color/yellow_500</item>
+        <item name="android:colorForeground">@color/app_white1</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/font_xl</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="ProductListBottomSheet"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_toolbar</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+    <style name="Theme.Bikroybaba.SwitchCompact" parent="">
+        <item name="colorControlActivated">@color/app_yellow</item>
+    </style>
+</resources>

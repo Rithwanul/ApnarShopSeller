@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saturday"
+        android:textSize="@dimen/font_xl"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:textColor="@color/app_black1"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangular_yellow_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9.00 am"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold"
+            android:textColor="@color/app_black1"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1.4"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold"
+            android:textColor="@color/app_black1"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11.00 pm"
+            android:gravity="center"
+            android:layout_weight=".8"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold"
+            android:textColor="@color/app_black1"
+            android:padding="5dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

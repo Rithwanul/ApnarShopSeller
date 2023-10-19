@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:background="@color/app_black4"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_header_height"
+                    android:background="@color/app_black4"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/nav_header_main_back_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/back_arrow"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_back"
+                        app:tint="@color/app_white1" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/ic_profile"
+                            app:civ_border_color="@color/app_white1"
+                            app:civ_border_width="2dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/nameHomePage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No Name"
+                                android:textColor="@color/app_white1"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/shopType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="No Shop"
+                                android:textColor="@color/app_white1"
+                                android:textSize="14sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/mobileNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="07672666"
+                                android:textColor="@color/app_white1"
+                                android:textSize="14sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="8dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/dahsboard_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_dashboard"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_dashboard"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/order_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_order"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_order"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/order_arrow_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:contentDescription="@string/forward_arrow"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                                app:tint="@color/app_white1" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/order_expand_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/app_black1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_pending_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_pending_order"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_all_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_all_order"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/product_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_product"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_product"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_product"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/product_arrow_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:contentDescription="@string/forward_arrow"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                                app:tint="@color/app_white1" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/product_expand_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/app_black1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_add_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_add_product"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_all_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_all_product"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/offer_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_offer"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_offer"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/offer_arrow_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:contentDescription="@string/forward_arrow"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                                app:tint="@color/app_white1" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/offer_expand_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/app_black1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_create_offer"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_create_offer"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_offer_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/nav_menu_height"
+                                android:layout_marginStart="@dimen/nav_submenu_title_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/menu_offer_list"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_submenu_title_textsize" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/deliveryArea_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_location_pointer"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_delivery_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:includeFontPadding="false"
+                                android:singleLine="true"
+                                android:text="@string/menu_delivery_area_selection"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/report_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_report"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_report"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_report"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/profile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_profile"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_profile"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/rating_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_review"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_rating"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_rating"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/notification_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_notification"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_notification"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_notification"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/setting_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_settings"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_settings"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_settings"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/support_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_support"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_support"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_support"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/logout_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/nav_menu_icon_height"
+                                android:layout_height="@dimen/nav_menu_icon_height"
+                                android:layout_gravity="center_vertical"
+                                android:contentDescription="@string/menu_icon"
+                                android:src="@drawable/ic_logout"
+                                app:tint="@color/app_white1" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_logout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/nav_menu_margin_left"
+                                android:gravity="center|left"
+                                android:text="@string/menu_logout"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/nav_item_language_switch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/home_page_language"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center|left"
+                                android:text="@string/menu_language"
+                                android:textAllCaps="false"
+                                android:textColor="@color/app_white1"
+                                android:textSize="@dimen/nav_menu_title_textsize"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_bn"
+                                    android:textColor="@color/app_white1"
+                                    android:textSize="@dimen/font_xl" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_compat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/app_white1"
+                                    android:theme="@style/ThemeOverlay.drawer" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_en"
+                                    android:textColor="@color/app_white1"
+                                    android:textSize="@dimen/font_xl" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/home_page_version"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/app_white1" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_page_nav_menu_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

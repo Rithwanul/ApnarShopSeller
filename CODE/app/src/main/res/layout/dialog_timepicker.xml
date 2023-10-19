@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/timePickerTitleTVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_opening_time"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/app_black1"/>
+
+    <TimePicker
+        android:id="@+id/simpleTimePickerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:headerBackground="@color/app_yellow"
+        android:timePickerMode="clock"
+        tools:ignore="UnusedAttribute" />
+
+    <CheckBox
+        android:id="@+id/dialog_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off_day"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/font_xxxl"/>
+
+<Button
+    android:id="@+id/cancelButton"
+    android:layout_width="120dp"
+    android:layout_height="40dp"
+    android:text="@string/ok"
+    android:layout_gravity="center"
+    android:textSize="@dimen/font_xxxl"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:textAllCaps="false"
+    android:background="@drawable/yellow_background_capsul_shape_fill"
+    android:textColor="@color/app_black1"
+    android:visibility="visible" />
+
+
+
+
+
+</LinearLayout>

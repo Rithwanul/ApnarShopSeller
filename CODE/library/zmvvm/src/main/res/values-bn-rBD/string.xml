@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_try_load">লোড করতে ব্যর্থ হয়েছে, আবার চেষ্টা করুন</string>
+    <string name="string_loading">লোড হচ্ছে…</string>
+    <string name="string_empty">কোনও দোকান পাওয়া গেল না</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.GalleryActivity">
+
+    <GridView
+        android:id="@+id/gallery_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="280dp"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:padding="2dp"
+        android:scrollingCache="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"/>
+
+    <Button
+        android:id="@+id/gallery_send_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/app_yellow"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+</RelativeLayout>
+</layout>

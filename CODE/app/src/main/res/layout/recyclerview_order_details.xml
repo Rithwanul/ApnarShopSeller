@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/productInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/product_price"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Pran Sorisar Oil"
+            android:textSize="@dimen/font_xl" />
+
+
+
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:text="140"
+            android:textSize="@dimen/font_xl"
+            android:textColor="@color/black"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/offer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productInfo"
+        android:layout_marginStart="30dp"
+        android:text="fgfgfg"
+        android:visibility="gone"
+        android:textColor="@color/app_yellow3"/>
+
+</RelativeLayout>
+</layout>

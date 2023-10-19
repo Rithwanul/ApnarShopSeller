@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        tools:context=".ui.offer.CreateOfferFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="22dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingEnd="22dp"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/create_offer_offer_type_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/offer_type"
+                    android:textSize="@dimen/font_xl"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/create_offer_offer_type_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custome_spinner"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/font_m" />
+
+                <LinearLayout
+                    android:id="@+id/create_offer_select_create_offer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/create_offer_select_create_offer_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_create_offer"
+                        android:textSize="@dimen/font_xl"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/create_offer_select_create_offer_dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custome_spinner"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/create_offer_offer_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/create_offer_offer_list_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_create_offer"
+                        android:textSize="@dimen/font_xl"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/create_offer_offer_list_dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custome_spinner"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/create_offer_offer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/create_offer_offer_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_offer"
+                        android:textSize="@dimen/font_xl"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/create_offer_offer_dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custome_spinner"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/create_offer_amount_of_discount_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/create_offer_amount_of_discount_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amount_of_discount"
+                            android:textSize="@dimen/font_xl"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/create_offer_amount_of_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_hint2"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_xl"
+                            tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/create_offer_offer_name_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/offer_name"
+                            android:textSize="@dimen/font_xl"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/create_offer_offer_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_hint2"
+                            android:gravity="end"
+                            android:inputType="textNoSuggestions"
+                            android:textSize="@dimen/font_xl"
+                            tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/create_offer_buy_get_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/create_offer_buy_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/buy"
+                            android:textSize="@dimen/font_xl"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/create_offer_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_hint2"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_xl"
+                            tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/create_offer_get_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/get_free"
+                            android:textSize="@dimen/font_xl"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/create_offer_get"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_hint2"
+                            android:gravity="end"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_xl"
+                            tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/create_offer_buy_get_offer_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/create_offer_buy_get_offer_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offer_name"
+                        android:textSize="@dimen/font_xl"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/create_offer_buy_get_offer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/app_hint2"
+                        android:gravity="center"
+                        android:inputType="textNoSuggestions"
+                        android:textSize="@dimen/font_xl"
+                        tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/create_offer_minimum_buy_offer_amount_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/create_offer_minimum_buy_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/minimum_buy_get_this_offer"
+                                android:textSize="@dimen/font_xl"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/create_offer_minimum_buy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/app_hint2"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/font_xl"
+                                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/create_offer_max_discount_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/create_offer_max_discount_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/max_discount"
+                                android:textSize="@dimen/font_xl"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/create_offer_max_discount_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/app_hint2"
+                                android:gravity="end"
+                                android:inputType="numberDecimal"
+                                android:textSize="@dimen/font_xl"
+                                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/create_offer_offer_amount_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/create_offer_offer_amount_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/offer_name"
+                                android:textSize="@dimen/font_xl"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/create_offer_offer_name_minimum_buy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/app_hint2"
+                                android:gravity="end"
+                                android:inputType="textNoSuggestions"
+                                android:textSize="@dimen/font_xl"
+                                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/create_offer_generate_offer_code_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/create_offer_generate_offer_code_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/generate_offer_code"
+                            android:textSize="@dimen/font_xl"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/create_offer_generate_offer_editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:backgroundTint="@color/app_hint2"
+                                android:inputType="textNoSuggestions"
+                                android:textColor="@color/app_black1"
+                                android:textSize="@dimen/font_xl"
+
+                                tools:ignore="Autofill,LabelFor,TextFields,UnusedAttribute" />
+
+                            <ImageView
+                                android:id="@+id/create_offer_generate_offer_iv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:layout_weight="1.5"
+                                android:contentDescription="@string/menu_offer"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_baseline_add_circle_outline_24"
+                                app:tint="@color/app_black1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/create_offer_offer_period_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/offer_period"
+                    android:textSize="@dimen/font_xl"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/create_offer_offer_period_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ash_background_rectangle_shape_stoke"
+                        android:gravity="center"
+                        tools:ignore="Autofill,LabelFor" />
+
+                    <TextView
+                        android:id="@+id/create_offer_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/to"
+                        android:textColor="@color/app_black1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/create_offer_offer_period_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/ash_background_rectangle_shape_stoke"
+                        android:gravity="center" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/create_offer_include_exclude_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/yellow_background_capsul_shape_fill"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/include_exclude_products"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_black1"
+                    android:textSize="@dimen/font_m"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/create_offer_save"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:fadingEdge="vertical"
+                        android:paddingTop="-4dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/yellow_background_capsul_shape_fill"
+                        android:paddingBottom="-4dp"
+                        android:gravity="center"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_black1"
+                        android:textSize="@dimen/font_m"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/create_offer_delete_tv"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:padding="0dp"
+                        app:fontFamily="@font/montserrat_regular"
+                        android:layout_marginBottom="5dp"
+                        app:backgroundTint="@color/red_200"
+                        android:background="@drawable/red_background_capsul_shape_fill"
+                        android:text="@string/cancel"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_m"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

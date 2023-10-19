@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/ic_a_shape"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/dialog_order_reject_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_clear_24"/>
+        <RadioGroup
+            android:id="@+id/order_reject_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <RadioButton
+                android:id="@+id/order_reject_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Out of Stock"
+                android:textStyle="bold"
+                android:checked="true"
+                android:textSize="@dimen/font_xl"/>
+            <RadioButton
+                android:id="@+id/order_reject_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Person Not Available"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_xl"/>
+            <RadioButton
+                android:id="@+id/order_reject_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Delivery Address is out of reach"/>
+            <RadioButton
+                android:id="@+id/order_reject_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Shop closing time for the day"/>
+            <RadioButton
+                android:id="@+id/order_reject_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Other"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/order_reject_comment"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/ash_background_rectangle_shape_stoke"/>
+
+        <Button
+            android:id="@+id/dialog_order_reject_save"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/app_black1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_m"
+            android:textAllCaps="false"
+            android:background="@drawable/yellow_background_capsul_shape_fill"
+            android:text="Save"/>
+    </LinearLayout>
+
+
+    </FrameLayout>
+

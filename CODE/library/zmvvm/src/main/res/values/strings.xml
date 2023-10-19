@@ -1,0 +1,5 @@
+<resources>
+    <string name="string_try_load">Failed to load, retry</string>
+    <string name="string_loading">Loading…</string>
+    <string name="string_empty">No shop was found</string>
+</resources>

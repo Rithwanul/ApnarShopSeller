@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_500">#fec107</color>
+    <color name="yellow_700">#ff9800</color>
+    <color name="red_200">#F44336</color>
+    <color name="red_700">#BF0E01</color>
+    <color name="colorAccent">#393738</color>
+    <color name="black">#FF000000</color>
+    <color name="white_200">#fffaea</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="app_yellow">#fec107</color>
+    <color name="app_yellow2">#ffefc1</color>
+    <color name="app_yellow3">#FF9800</color>
+    <color name="app_yellow4">#fffaea</color>
+
+    <color name="app_black1">#393738</color>
+    <color name="app_black2">#80222222</color>
+    <color name="app_black3">#000000</color>
+    <color name="app_black4">#423F3F</color>
+
+
+    <color name="app_white1">#ffffff</color>
+    <color name="app_white2">#f0f0f0</color>
+    <color name="app_white3">#ccc</color>
+    <color name="app_hint">#b7b7b7</color>
+    <color name="app_hint2">#a8a3a3</color>
+
+    <color name="blue">#0581E3</color>
+    <color name="ash">#CFCFCF</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#FF1100</color>
+    <color name="green_500">#ff4CAF50</color>
+    <color name="blue_200">#ff4b82ff</color>
+
+    <color name="text_hint">#ffc5c5c5</color>
+
+    <color name="colorPrimarySpinner">#3F51B5</color>
+    <color name="imagepicker_grey">#424242</color>
+
+
+</resources>

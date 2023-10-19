@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rv_notification_layout"
+    android:background="@drawable/rectangular_black_border_white"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/rv_notification_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/buyer_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/potato" />
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/rv_delete"
+        android:layout_marginStart="5dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/rv_notification_image">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_order_successfully_created"
+            android:textColor="@color/app_black1"
+            android:textSize="@dimen/font_xxxl"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="Name: Rahmat"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/app_black1"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/rv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/body"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="04-08-2020 9.30 am"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+
+        android:id="@+id/rv_delete"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/buyer_image"
+        android:padding="7dp"
+        android:background="?selectableItemBackground"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_delete" />
+
+</RelativeLayout>
+</layout>

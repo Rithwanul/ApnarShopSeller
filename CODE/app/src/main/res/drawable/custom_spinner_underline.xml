@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+
+
+            <item android:drawable="@drawable/ic_baseline_expand_more_24" android:gravity="right">
+                <!--<bitmap
+
+                    android:gravity="right" android:src="@drawable/down_arrow" />-->
+            </item>
+            <item android:width="650dp" android:height="1dp" android:gravity="bottom">
+
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/app_hint2" />
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+</selector>

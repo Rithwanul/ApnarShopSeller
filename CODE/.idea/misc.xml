@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/drawable/ash_background_rectangle_shape_stoke.xml" value="0.23854166666666668" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/drawable/ic_delete.xml" value="0.17708333333333334" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/drawable/ic_location_pointer.xml" value="0.17708333333333334" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/common_yes_no_dialog.xml" value="0.4" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/custom_spinner_item.xml" value="0.19021739130434784" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/dialog_yes_no.xml" value="0.4" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/fragment_add_product.xml" value="0.264" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/fragment_dashboard.xml" value="0.19021739130434784" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/fragment_delivery_area.xml" value="0.22239583333333332" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/fragment_edit_product.xml" value="0.2421875" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/fragment_offer_list.xml" value="0.26241534988713316" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/recyclerview_delivery_area.xml" value="0.4" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/unit_spinner.xml" value="0.22239583333333332" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/view_list_area_selection_item.xml" value="0.21875" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/view_list_city_selection_item.xml" value="0.264" />
+        <entry key="..\:/Rithwan/BikroyBabaSeller/CODE/app/src/main/res/layout/view_list_item.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/activity_authentication.xml" value="0.10131712259371833" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/activity_gallery.xml" value="0.10131712259371833" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/activity_home.xml" value="0.10572916666666667" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/activity_launcher.xml" value="0.10131712259371833" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/app_bar_main.xml" value="0.18" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_complete_order.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_create_offer.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_edit_offer.xml" value="0.22" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_expired_offer.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_offer_created_successfully.xml" value="0.12907608695652173" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_product_added_successfully.xml" value="0.25" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/fragment_running_offer.xml" value="0.12907608695652173" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/recyclerview_language.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/recyclerview_nav_menu_item.xml" value="0.22" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/app/src/main/res/layout/recyclerview_nav_submenu_item.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/drawable-xhdpi/ic_arrow_back.xml" value="0.14537037037037037" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/drawable/ic_shops.xml" value="0.14722222222222223" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/layout/fragment_base.xml" value="0.20833333333333334" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/layout/layout_loading_empty.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/layout/layout_loading_error.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zmvvm/src/main/res/layout/layout_loading_view.xml" value="0.1" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zwebview/src/main/res/layout/z_load_url_error.xml" value="0.20833333333333334" />
+        <entry key="..\:/moktar-gtech/android-project/bikroybaba-seller-android/CODE/library/zwebview/src/main/res/layout/z_video_loading_progress.xml" value="0.20833333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

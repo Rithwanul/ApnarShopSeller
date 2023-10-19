@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pending_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/buyer_image"
+                    android:src="@drawable/ic_user"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: Rahim Rahman"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_black1"
+                        android:textSize="@dimen/font_xl"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0172736353"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/font_s"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order #4488446"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/font_s"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:textColor="@color/app_black1"
+                        android:textSize="@dimen/font_xl"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 August 2020 2.20 pm"
+                        android:gravity="end"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/app_black1"
+                        android:textSize="@dimen/font_s"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order status: Placed"
+                        android:layout_marginTop="2dp"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:textColor="#4CAF50"
+                        android:textSize="@dimen/font_xl"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

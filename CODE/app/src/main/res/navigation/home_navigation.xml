@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.bikroybaba.seller.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_settings"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_pending_order"
+            app:destination="@id/nav_pending_order" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_complete_order"
+            app:destination="@id/nav_complete_order" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_report"
+            app:destination="@id/nav_report" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_create_offer"
+            app:destination="@id/nav_create_offer" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_all_product"
+            app:destination="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_add_product"
+            app:destination="@id/nav_add_product" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_notification"
+            app:destination="@id/nav_notification" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_delivery_area"
+            app:destination="@id/delivery_area" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_offer_list"
+            app:destination="@id/nav_offer_list" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_rating"
+            app:destination="@id/nav_rating" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_all_offer"
+            app:destination="@id/nav_all_offer" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_support"
+            app:destination="@id/nav_support" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pending_order"
+        android:name="com.bikroybaba.seller.ui.order.PendingOrderFragment"
+        android:label="fragment_pending_order"
+        tools:layout="@layout/fragment_pending_order">
+        <action
+            android:id="@+id/action_nav_pending_order_to_nav_order_details"
+            app:destination="@id/nav_order_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_complete_order"
+        android:name="com.bikroybaba.seller.ui.order.CompleteOrderFragment"
+        android:label="fragment_complete_order"
+        tools:layout="@layout/fragment_complete_order">
+        <action
+            android:id="@+id/action_nav_complete_order_to_nav_complete_order_details"
+            app:destination="@id/nav_complete_order_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_product"
+        android:name="com.bikroybaba.seller.ui.product.AddProductFragment"
+        android:label="@string/menu_add_product"
+        tools:layout="@layout/fragment_add_product">
+        <action
+            android:id="@+id/action_nav_add_product_to_nav_dashboard"
+            app:destination="@id/nav_dashboard" />
+        <action
+            android:id="@+id/action_nav_add_product_to_nav_product_added_successfully"
+            app:destination="@id/nav_product_added_successfully" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_all_product"
+        android:name="com.bikroybaba.seller.ui.product.AllProductFragment"
+        android:label="AllProductFragment"
+        tools:layout="@layout/fragment_all_product">
+        <argument
+            android:name="filter"
+            android:defaultValue="BLANK"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_all_product_to_nav_edit_product"
+            app:destination="@id/nav_edit_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_create_offer"
+        android:name="com.bikroybaba.seller.ui.offer.CreateOfferFragment"
+        android:label="fragment_create_offer"
+        tools:layout="@layout/fragment_create_offer">
+        <argument
+            android:name="offerId"
+            android:defaultValue="BLANK"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_create_offer_to_nav_include_exclude"
+            app:destination="@id/nav_include_exclude" />
+        <action
+            android:id="@+id/action_nav_create_offer_to_nav_offer_created_successfully"
+            app:destination="@id/nav_offer_created_successfully" />
+        <action
+            android:id="@+id/action_nav_create_offer_to_nav_dashboard"
+            app:destination="@id/nav_dashboard" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_all_offer"
+        android:name="com.bikroybaba.seller.ui.offer.AllOfferFragment"
+        android:label="@string/all_offer"
+        tools:layout="@layout/fragment_all_offer" />
+    <fragment
+        android:id="@+id/delivery_area"
+        android:name="com.bikroybaba.seller.ui.delivery.DeliveryAreaFragment"
+        android:label="fragment_delivery_area"
+        tools:layout="@layout/fragment_delivery_area" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.bikroybaba.seller.ui.report.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.bikroybaba.seller.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="com.bikroybaba.seller.ui.rating.RatingFragment"
+        android:label="@string/menu_rating"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.bikroybaba.seller.ui.notification.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/action_nav_notification_to_nav_pending_order"
+            app:destination="@id/nav_pending_order"
+            app:popUpTo="@id/nav_pending_order"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.bikroybaba.seller.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.bikroybaba.seller.ui.support.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/nav_order_details"
+        android:name="com.bikroybaba.seller.ui.order.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details">
+        <argument
+            android:name="orderId"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_complete_order_details"
+        android:name="com.bikroybaba.seller.ui.order.CompleteOrderDetailsFragment"
+        android:label="CompleteOrderDetailsFragment"
+        tools:layout="@layout/fragment_complete_order_details">
+        <argument
+            android:name="completeOrderId"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_product_added_successfully"
+        android:name="com.bikroybaba.seller.ui.product.ProductAddedSuccessfullyFragment"
+        android:label="@string/product_added_successfully"
+        tools:layout="@layout/fragment_product_added_successfully">
+        <action
+            android:id="@+id/action_nav_product_added_successfully_to_nav_dashboard"
+            app:destination="@id/nav_dashboard"
+            app:popUpTo="@id/nav_dashboard"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_product_added_successfully_to_nav_add_product"
+            app:destination="@id/nav_add_product"
+            app:popUpTo="@id/nav_add_product"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_product"
+        android:name="com.bikroybaba.seller.ui.product.EditProductFragment"
+        android:label="@string/edit_product"
+        tools:layout="@layout/fragment_edit_product">
+        <argument
+            android:name="productId"
+            android:defaultValue='""'
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_edit_product_to_nav_all_product"
+            app:destination="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_offer_created_successfully"
+        android:name="com.bikroybaba.seller.ui.offer.OfferCreatedSuccessfullyFragment"
+        android:label="@string/offer_created_successfully"
+        tools:layout="@layout/fragment_offer_created_successfully">
+        <argument
+            android:name="offerDate"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="offerDiscount"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="offerToDate"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="message"
+            android:defaultValue='""'
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_offer_created_successfully_to_nav_create_offer"
+            app:destination="@id/nav_create_offer"
+            app:popUpTo="@id/nav_create_offer"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_offer_list"
+        android:name="com.bikroybaba.seller.ui.offer.OfferListFragment"
+        android:label="@string/offerList"
+        tools:layout="@layout/fragment_offer_list">
+        <argument
+            android:name="OfferDetails"
+            app:argType="com.bikroybaba.seller.model.remote.response.OfferDetailsResponse" />
+        <action
+            android:id="@+id/action_nav_offer_list_to_nav_edit_offer2"
+            app:destination="@id/nav_edit_offer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_include_exclude"
+        android:name="com.bikroybaba.seller.ui.offer.IncludeExcludeFragment"
+        android:label="fragment_include_exclude"
+        tools:layout="@layout/fragment_include_exclude">
+        <argument
+            android:name="offerId"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="message"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_offer"
+        android:name="com.bikroybaba.seller.ui.offer.EditOfferFragment"
+        android:label="@string/edit_offer"
+        tools:layout="@layout/fragment_edit_offer">
+        <argument
+            android:name="OfferDetails"
+            app:argType="com.bikroybaba.seller.model.remote.response.OfferDetailsResponse" />
+        <action
+            android:id="@+id/action_nav_edit_offer_to_nav_include_exclude"
+            app:destination="@id/nav_include_exclude" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_expired_offer"
+        android:name="com.bikroybaba.seller.ui.offer.ExpiredOfferFragment"
+        android:label="@string/expired_offer"
+        tools:layout="@layout/fragment_expired_offer" />
+</navigation>

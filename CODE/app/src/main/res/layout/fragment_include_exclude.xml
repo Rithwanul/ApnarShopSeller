@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_round_shap"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/yellow_round_shape_fill"
+                android:src="@drawable/ic_search"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_product"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:searchIcon="@null"
+                app:closeIcon="@null"
+                android:theme="@style/AppSearchView"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/app_black1"
+                app:queryBackground="@android:color/transparent"
+                />
+
+            <ImageView
+                android:id="@+id/include_exclude_filter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/yellow_round_shape_fill"
+                android:src="@drawable/ic_filter"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/include_exclude_include_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/yellow_background_capsul_shape_fill"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/include_all"
+                android:textAllCaps="false"
+                android:textColor="@color/app_black1"
+                android:textSize="@dimen/font_m"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/include_exclude_exclude_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:background="@drawable/yellow_background_capsul_shape_fill"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/exclude_all"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/app_black1"
+                android:textSize="@dimen/font_m"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/include_exclude_swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_include_exclude"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_internet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/internet_connection_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_no_internet"/>
+            <TextView
+                android:id="@+id/no_internet_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/internet_connection_iv"
+                android:text="@string/no_internet_connection"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold"
+                android:textColor="@color/app_black1"/>
+
+            <TextView
+                android:id="@+id/try_again"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/yellow_background_capsul_shape_fill"
+                android:gravity="center"
+                android:text="@string/try_again"
+                android:textColor="@color/app_black1"
+                android:textSize="@dimen/font_xl"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/no_internet_tv" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/no_product_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/notification_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_no_data_found_product" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_product_found"
+                android:textColor="@color/app_black1"
+                android:textSize="@dimen/font_xxxl" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
